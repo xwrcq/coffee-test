@@ -6,7 +6,7 @@ import { cardEvents } from "./func/cardEvents.js";
 import { controlFromInput, controlFromSlider, controlToInput, controlToSlider, fillSlider, setToggleAccessible } from "./func/dualSliders.js";
 import { initialStars } from "./func/initialStars.js";
 import { pagination } from "./func/pagination.js";
-import { sortCases } from "./func/SortAndFilter.js";
+//import { sortCases } from "./func/SortAndFilter.js";
 
 const cards = document.querySelector('.cards');
 const sortBtns = document.querySelectorAll('.purchases__sort-item');
@@ -226,4 +226,21 @@ function sliderFilterHandler(filterName, from, to) {
 function activeToggle(parent, activeElement) {
 	parent.forEach(el => el.classList.remove('active'));
 	activeElement.classList.add('active');
+}
+
+function sortCases(sortValue, requestFunc, targetBtn = null) {
+	switch (sortValue) {
+		case 'new':
+			requestFunc("dateNumber", 'afterbegin', targetBtn);
+			break;
+		case 'old':
+			requestFunc("dateNumber", 'beforeend', targetBtn);
+			break;
+		case 'popular':
+			requestFunc("ratingAvg", 'afterbegin', targetBtn);
+			break;
+		case 'unpopular':
+			requestFunc("ratingAvg", 'beforeend', targetBtn);
+			break;
+	}
 }
