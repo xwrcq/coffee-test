@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+	<title>coffee</title>
+	<link rel="stylesheet" href="css/main.css">
+	<!-- <script src="js/burger.js" defer></script> -->
+	<script type="module" src="js/constructor.js" defer></script>
+	<script type="module" src="js/orders.js" defer></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container container">
+				<nav class="header__navbar">
+					<a class="header__logo" href="index.html" id="logo"><img src="images/header/logo.svg"
+							alt="logo"></a>
+					<!-- <div class="header__links" id="links-menu">
+						<a href="#" class="header__link">SEARCH</a>
+						<a href="#" class="header__link">MENU</a>
+						<a href="#" class="header__link">ABOUT</a>
+						<a href="#" class="header__link">PRODUCT</a>
+					</div> -->
+					<ul class="header__btns" id="btns-menu">
+						<a class="header__btn header__btn-like" href="#"><img src="images/header/favorite.svg"
+								alt="favorite"></a>
+						<a class="header__btn header__btn-busket" href="order.html"><img src="images/header/basket.svg"
+								alt="basket"></a>
+					</ul>
+					<div class="header__burger" id="burger">
+						<span></span>
+					</div>
+					<div class="header__popup" id="popup"></div>
+				</nav>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__great great">
+				<div class="great__container">
+					<h1 class="great__title">GREAT <span class="great__title-white">INDIAN</span> <br> COF<span
+							class="great__title-white">FEE</span></h1>
+					<div class="great__text">
+						<h4 class="great__subtitle">SELECTED COFFEE BEANS</h4>
+						<p class="great__subtext">Enjoy the aroma of selected coffee beans available at our shop.</p>
+					</div>
+				</div>
+				<div class="great__line"></div>
+			</section>
+			<section class="page__best best">
+				<div class="best__container container">
+					<div class="best__cards cards-best">
+						<div class="cards-best__card cards-best__card-1">
+							<img src="images/best/card-1.png" alt="coffee">
+						</div>
+						<div class="cards-best__card">
+							<img src="images/best/card-2.png" alt="coffee">
+						</div>
+						<div class="cards-best__card">
+							<img src="images/best/card-3.png" alt="coffee">
+						</div>
+					</div>
+					<div class="best__content">
+						<div class="best__content-1">
+							<h3 class="best__title title">Your Best To Your Bestie</h3>
+							<div class="best__text">We are a team of dedicated coffee fans who celebrate exceptional
+								coffee
+								brands and roasters by providing our</div>
+						</div>
+						<a href="#" class="best__btn">Shope Coffee</a>
+						<ul class="best__icons">
+							<li class="best__icon"><img src="images/best/icons/icon-1.png" alt="icon"></li>
+							<li class="best__icon"><img src="images/best/icons/icon-2.png" alt="icon"></li>
+							<li class="best__icon"><img src="images/best/icons/icon-3.png" alt="icon"></li>
+							<li class="best__icon"><img src="images/best/icons/icon-4.png" alt="icon"></li>
+							<li class="best__icon"><img src="images/best/icons/icon-5.png" alt="icon"></li>
+						</ul>
+						<div class="best__content-2">
+							<h3 class="best__title title">GREAT COFFEE EVER</h3>
+							<div class="best__text">We are a team of dedicated coffee fans who celebrate exceptional
+								coffee
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="page__coffee-image coffee-image">
+				<img class="coffee-image__img" src="images/coffee-image/coffee.png" alt="coffee">
+			</div>
+			<section class="page__constructor constructor">
+				<div class="constructor__container container">
+					<h2 class="constructor__title title">COFFEE CONSTRUCTOR</h2>
+					<div class="constructor__content">
+						<div class="constructor__build">
+							<div class="constructor__image-container">
+								<img class="constructor__image" src="images/constructor/hot-m-cup.png" alt="coffee">
+							</div>
+						</div>
+						<div class="constructor__selectors selectors-constructor">
+							<h5 class="selectors-constructor__title">COFFEE TYPE</h5>
+							<div class="selectors-constructor__selector">
+								<div class="selectors-constructor__radio active" id="hot" data-select="type">HOT
+								</div>
+								<div class="selectors-constructor__radio" id="cold" data-select="type">
+									COLD</div>
+							</div>
+							<h5 class="selectors-constructor__title">CUP SIZE</h5>
+							<div class="selectors-constructor__selector">
+								<div class="selectors-constructor__radio" id="s-cup" data-select="cup" data-ratio="1.2">
+									S
+								</div>
+								<div class="selectors-constructor__radio active" id="m-cup" data-select="cup"
+									data-ratio="1.45">M
+								</div>
+								<div class="selectors-constructor__radio" id="l-cup" data-select="cup"
+									data-ratio="1.85">L
+								</div>
+								<div class="selectors-constructor__radio" id="xl-cup" data-select="cup"
+									data-ratio="2.05">
+									XL</div>
+							</div>
+							<h5 class="selectors-constructor__title block">CAFFEINE AMOUNT</h5>
+							<div class="selectors-constructor__amount">
+								<input type="range" min="30" max="180" value="60" id="caffeine" step="10"
+									class="selectors-constructor__slider">
+								<div class="selectors-constructor__amount--value" id="caffeine-value">
+								</div>
+							</div>
+							<h5 class="selectors-constructor__title block">SUGAR AMOUNT</h5>
+							<div class="selectors-constructor__amount">
+								<input type="range" min="0" max="50" value="10" id="sugar" step="5"
+									class="selectors-constructor__slider">
+								<div class="selectors-constructor__amount--value" id="sugar-value">
+								</div>
+							</div>
+							<h5 class="selectors-constructor__title">MILK</h5>
+							<div class="selectors-constructor__selector">
+								<div class="selectors-constructor__radio active" id="milk-add" data-select="milk">YES
+								</div>
+								<div class="selectors-constructor__radio" id="milk-remove" data-select="milk">
+									NO</div>
+							</div>
+							<h5 class="selectors-constructor__title">SYRUP</h5>
+							<div class="selectors-constructor__dropdown">
+								<input type="text" class="selectors-constructor__placeholder" placeholder="choose syrup"
+									disabled>
+								<div class="selectors-constructor__list">
+									<div id="no-syrup" class="selectors-constructor__option">no syrup
+									</div>
+									<div id="vanilla" class="selectors-constructor__option">vanilla
+									</div>
+									<div id="caramel" class="selectors-constructor__option">caramel
+									</div>
+									<div id="chocolate" class="selectors-constructor__option">chocolate
+									</div>
+									<div id="hazelnut" class="selectors-constructor__option">hazelnut
+									</div>
+									<div id="lavender" class="selectors-constructor__option">lavender
+									</div>
+									<div id="coconut" class="selectors-constructor__option">coconut
+									</div>
+									<div id="strawberry" class="selectors-constructor__option">strawberry
+									</div>
+									<div id="banana" class="selectors-constructor__option">banana
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="constructor__price"></div>
+					<div class="constructor__buy">
+						<button class="constructor__btn btn">BUY</button>
+					</div>
+				</div>
+			</section>
+			<section class="page__orders orders">
+				<div class="orders__container">
+					<h4 class="orders__title">user's orders</h4>
+					<div class="orders__loader"></div>
+					<div class="orders__cards cards">
+						<!-- <div class="orders__card card-orders">
+							<div class="card-orders__title basket-orders__title-order">${order.type} coffee</div>
+								<div class="card-orders__image-container basket-orders__image-container-order">
+									<img src="./images/constructor/${order.type}-${order.cup}.png" alt="Coffee cup" class="card-orders__img basket-orders__img-order">
+								</div>
+								<div class="card-orders__characters basket-orders__characters-order">coffee characters</div>
+								<ul class="card-orders__characters-list">
+									<li class="card-orders__characters-list-item">cup - ${order.cup.replace(/-[\w]+/g, '')} size</li>
+									<li class="card-orders__characters-list-item">milk - ${order.milk === 'milk-add' ? 'yes' : 'no'}</li>
+									<li class="card-orders__characters-list-item">syrup - ${order.syrup.replace(/-[\w]+/g, '')}</li>
+									<li class="card-orders__characters-list-item">caffeine - ${order.caffeine}mg</li>
+									<li class="card-orders__characters-list-item">sugar - ${order.sugar !== 0 ? order.sugar + 'g' : 'no'}</li>
+									<li class="card-orders__characters-list-item">price - ${order.price} UAH</li>
+								</ul>
+						</div> -->
+					</div>
+					<a href="purchases.html" class="orders__link btn">View all orders >></a>
+				</div>
+			</section>
+		</main>
+	</div>
+</body>
+
+</html>
